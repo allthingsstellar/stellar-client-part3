@@ -87,7 +87,7 @@ jQuery(document).ready( function($){
       }
 
 
-      if (isNan(amount)) {
+      if (isNaN(amount)) {
          resp.html('<p class="text-danger">Invalid Amount</p>');
          return false;
       }
