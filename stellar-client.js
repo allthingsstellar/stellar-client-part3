@@ -102,7 +102,7 @@ jQuery(document).ready( function($){
         })
         .then(function(account) {
           
-          return server.load(srcAcct);
+          return server.loadAccount(srcAcct);
         })
         .catch(StellarSdk.NotFoundError, function(error) {
           resp.html('<p class="text-danger">Source Account not active </p>');
